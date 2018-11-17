@@ -1,11 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
-
+<style>
+   
+        .jumbotron {
+            background-color: #ff7361;
+            text-align: center;
+            font-style: oblique;
+        }
+        .jumbotron p{
+            font-size: 20px;
+        }
+        .jumbotron h2{
+            font-size: 30px;
+        }
+        
+    
+        </style>
 <div class="container">
+       
+        <div class="jumbotron">
+             
+                <h2 class="lead">Welcome to Forum Nepal.</h2>
+            
+                <p class="lead">An open Community for Nepali People.Ask and Share view with People.</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+              </div>
+
+
     <div class="row">
         <div class="col-md-9 col-md-push-3">
-                <p>sa</p>
+              
             @if ( Auth::guest() AND !app('request')->input('page') )
                 <div class="row">
                     <div class="col-md-12">

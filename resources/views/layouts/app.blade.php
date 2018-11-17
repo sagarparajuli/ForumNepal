@@ -49,12 +49,34 @@
 
     <!-- Best way to load -->
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <style>
+       
+        .navbar{
+            background-color: #2f3239;
+        }
+        .navbar-header img {
+            max-height: 100%;
+      width: auto;
+        
+    }
+    .nav-item{
+      
+        font-family:sans-serif;
+    }
+    .nav a{
+    color: white !important;
+    font-size: 17px !important;
+    }
+        
+           
+            </style>
 </head>
 <body>
     <div id="app">
         <div class="container">
             <!--Navbar-->
-            <nav class="navbar navbar-default fixed-top navbar-light #42a5f5 blue">
+            <nav class="navbar navbar-default fixed-top navbar-light" >
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -64,19 +86,22 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{ url('/') }}"><i class="fa fa-home" fa-lg></i></a>
+                     <a class="navbar-brand" href="{{ url('/') }}"> <img src="/images/logo.png" /></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/questions/top"> TOP </a>
+                                <a class="nav-link" href="/questions/top"> Latest</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/questions/new"> NEW </a>
+                                <a class="nav-link" href="/questions/new"> New Questions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/question/ask">ASK </a></a>
+                                <a class="nav-link" href="/question/ask">Ask Questions </a></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us </a></a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

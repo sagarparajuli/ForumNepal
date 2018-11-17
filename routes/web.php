@@ -58,6 +58,10 @@ Route::group(['prefix'=>'api','middleware' => 'auth'], function(){
     })->name('api.tags');
 });
 
+//About page 
+Route::get('about', function () {
+  return view('questions.about');
+});
 // Votes
 Route::post('vote/answer', array( 'before'=>'csfr','uses'=>'VoteController@vote_answer' ) );
 Route::post('vote/question', array( 'before'=>'csfr','uses'=>'VoteController@vote_question' ) );
