@@ -52,6 +52,7 @@
 
     <style>
        
+      
         .navbar{
             background-color: #2f3239;
         }
@@ -65,7 +66,11 @@
         font-family:sans-serif;
     }
     .nav a{
-    color: white !important;
+    color: #fff !important;
+    font-size: 17px !important;
+    }
+    .dropdown-menu a{
+        color: #000 !important;
     font-size: 17px !important;
     }
         

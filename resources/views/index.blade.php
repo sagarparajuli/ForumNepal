@@ -7,6 +7,7 @@
             background-color: #ff7361;
             text-align: center;
             font-style: oblique;
+            color: #fff;
         }
         .jumbotron p{
             font-size: 20px;
